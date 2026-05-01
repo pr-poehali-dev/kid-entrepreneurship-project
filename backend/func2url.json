@@ -1,0 +1,7 @@
+{
+  "auth": "https://functions.poehali.dev/ab0e05d3-1016-4d88-b166-df4c225fab1f",
+  "reviews": "https://functions.poehali.dev/892f5d1c-1c97-4257-9d36-107b8f6921f6",
+  "orders": "https://functions.poehali.dev/acf63207-6025-4170-80dd-e9b7de84a4ff",
+  "catalog": "https://functions.poehali.dev/57ee5c82-d92a-44eb-abf0-dcac637792c7",
+  "chat": "https://functions.poehali.dev/d3250bc1-9475-43bf-8900-d49256b9443a"
+}
