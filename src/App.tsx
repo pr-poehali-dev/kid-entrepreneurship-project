@@ -10,6 +10,10 @@ import About from './pages/About';
 import FAQ from './pages/FAQ';
 import Reviews from './pages/Reviews';
 import Contacts from './pages/Contacts';
+import BsMarket from './pages/BsMarket';
+import BsAccount from './pages/BsAccount';
+import BsSell from './pages/BsSell';
+import Dashboard from './pages/Dashboard';
 import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -36,6 +40,10 @@ function AppContent() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="/bs-market" element={<BsMarket />} />
+          <Route path="/bs-account/:id" element={<BsAccount onAuthRequired={() => setAuthOpen(true)} />} />
+          <Route path="/bs-sell" element={<BsSell onAuthRequired={() => setAuthOpen(true)} />} />
+          <Route path="/dashboard" element={<Dashboard onAuthRequired={() => setAuthOpen(true)} />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

@@ -14,8 +14,9 @@ export default function Navbar({ onAuthClick }: NavbarProps) {
 
   const links = [
     { href: '/', label: 'Главная' },
-    { href: '/catalog', label: 'Каталог' },
-    { href: '/about', label: 'О магазине' },
+    { href: '/catalog', label: 'Валюта' },
+    { href: '/bs-market', label: '🏆 BS Аккаунты' },
+    { href: '/about', label: 'О нас' },
     { href: '/reviews', label: 'Отзывы' },
     { href: '/faq', label: 'FAQ' },
     { href: '/contacts', label: 'Контакты' },
@@ -51,7 +52,7 @@ export default function Navbar({ onAuthClick }: NavbarProps) {
         <div className="flex items-center gap-3">
           {user ? (
             <div className="flex items-center gap-3">
-              <span className="text-sm text-[var(--neon-cyan)] hidden md:block">{user.username}</span>
+              <Link to="/dashboard" className="text-sm text-[var(--neon-cyan)] hidden md:block hover:underline">{user.username}</Link>
               <button
                 onClick={() => { logout(); window.location.reload(); }}
                 className="btn-neon-cyan px-4 py-1.5 rounded-lg text-sm font-semibold"
